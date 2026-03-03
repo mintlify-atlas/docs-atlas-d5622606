@@ -1,0 +1,130 @@
+{
+  "projectType": "saas",
+  "projectName": "SIGSAHO",
+  "projectDescription": "Aeronautical Operations Management System for centralizing aircraft maintenance, personnel tracking, flight operations, and medical transfers.",
+  "theme": "aspen",
+  "primaryColor": "#0066CC",
+  "lightColor": "#3399FF",
+  "darkColor": "#004499",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "features", "architecture"]
+          },
+          {
+            "group": "Setup",
+            "pages": ["installation", "configuration", "deployment"]
+          }
+        ]
+      },
+      {
+        "tab": "User Guide",
+        "groups": [
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/dashboard",
+              "features/authentication",
+              "features/user-management"
+            ]
+          },
+          {
+            "group": "Aircraft Management",
+            "pages": [
+              "features/aircraft/overview",
+              "features/aircraft/maintenance",
+              "features/aircraft/parts",
+              "features/aircraft/services",
+              "features/aircraft/documents"
+            ]
+          },
+          {
+            "group": "Personnel & Training",
+            "pages": [
+              "features/personnel/overview",
+              "features/personnel/management",
+              "features/personnel/training",
+              "features/personnel/alerts"
+            ]
+          },
+          {
+            "group": "Flight Operations",
+            "pages": [
+              "features/flights/overview",
+              "features/flights/transfers",
+              "features/flights/medical-transfers",
+              "features/flights/tracking"
+            ]
+          },
+          {
+            "group": "Reports & Analytics",
+            "pages": [
+              "features/reports/overview",
+              "features/reports/statistics",
+              "features/reports/export"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "api/introduction",
+              "api/authentication",
+              "api/rate-limiting"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/endpoints/users",
+              "api/endpoints/aircraft",
+              "api/endpoints/aircraft-services",
+              "api/endpoints/aircraft-parts",
+              "api/endpoints/transfers",
+              "api/endpoints/medical-transfers",
+              "api/endpoints/trainings",
+              "api/endpoints/reports",
+              "api/endpoints/dashboard"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Aircraft maintenance tracking and scheduling",
+    "Personnel management with automatic alerts for document expiration",
+    "Flight operations and medical transfer coordination",
+    "Real-time dashboard with operational metrics",
+    "Training and certification management",
+    "Comprehensive reporting and data export",
+    "Role-based access control",
+    "Document management and notifications"
+  ],
+  "publicApiSurface": [
+    "POST /api/v1/auth/login",
+    "POST /api/v1/auth/register",
+    "GET /api/v1/aircrafts",
+    "POST /api/v1/aircrafts",
+    "GET /api/v1/aircraft-services",
+    "POST /api/v1/aircraft-services",
+    "GET /api/v1/aircraft-parts",
+    "POST /api/v1/transfers",
+    "GET /api/v1/medical-transfers",
+    "GET /api/v1/trainings",
+    "POST /api/v1/users-trainings",
+    "GET /api/v1/dashboard",
+    "GET /api/v1/reports",
+    "GET /api/v1/notification-configs",
+    "GET /api/v1/users",
+    "GET /api/v1/roles"
+  ]
+}
